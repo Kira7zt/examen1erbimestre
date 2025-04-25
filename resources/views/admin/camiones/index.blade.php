@@ -21,7 +21,7 @@
                     <td>{{ $camion->capacidad }}</td>
                     <td>{{ $camion->empresa->nombre }}</td>
                     <td>
-                        <a href="{{ route('admin.camiones.edit', $camion->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ route('admin.camiones.edit', $camion->id) }}" class="btn btn-success btn-sm">Editar</a>
                         <form id="form-eliminar-{{ $camion->id }}" action="{{ route('admin.camiones.destroy', $camion->id) }}" method="POST" style="display:inline-block;">
                             @csrf
                             @method('DELETE')

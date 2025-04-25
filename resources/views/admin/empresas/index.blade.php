@@ -19,7 +19,7 @@
                     <td>{{ $empresa->direccion }}</td>
                     <td>{{ $empresa->telefono }}</td>
                     <td>
-                        <a href="{{ route('admin.empresas.edit', $empresa->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ route('admin.empresas.edit', $empresa->id) }}" class="btn btn-success btn-sm">Editar</a>
                         <form id="form-eliminar-{{ $empresa->id }}" action="{{ route('admin.empresas.destroy', $empresa->id) }}" method="POST" style="display:inline-block;">
                             @csrf
                             @method('DELETE')
